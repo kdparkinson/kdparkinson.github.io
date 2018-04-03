@@ -1,0 +1,9 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let job of jobs">
+        <app-resume-card [title]=job.title [subtitle]=job.subtitle [items]=job.items [image]=job.image></app-resume-card>
+      </div>
+    </div>
+  </div>
+</div>
